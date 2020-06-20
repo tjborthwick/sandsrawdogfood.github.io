@@ -1,0 +1,63 @@
+
+/*
+https://coolors.co/
+
+Lavender Web #E5EAFA
+Laurel Green #C6CCB2
+
+Air Superiority Blue #80A1C1
+Bone #C6CCB2
+Champagne #EEE3AB
+Softer Red #C32F27
+Red #FF1B1C
+
+
+*/
+
+body {
+    background: #F5EFED;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    padding-top: 72px;
+}
+
+.container {
+    background: #fff;
+}
+
+.wordmark .navbar-brand {
+    color: #C32F27;
+    font-family: 'Roboto Slab';
+    text-transform: uppercase;
+}
+
+.navbar {
+    border-bottom: 1px solid #E5EAFA;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #212529;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #212529;
+}
+
+#intro {
+    margin-top: 0;
+}
+
+.block {
+    margin: 4rem 0;
+}
