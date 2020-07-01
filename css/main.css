@@ -5,59 +5,272 @@ https://coolors.co/
 Lavender Web #E5EAFA
 Laurel Green #C6CCB2
 
+
 Air Superiority Blue #80A1C1
 Bone #C6CCB2
 Champagne #EEE3AB
 Softer Red #C32F27
 Red #FF1B1C
 
+Isabelline #F5EFED
+Blue Sapphire #0B4F6C
+Smoky Black #0F0A0A
+Cadmium Orange #F28F3B
+Venetian Red #BF211E
 
 */
 
+html, body {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
 body {
     background: #F5EFED;
+    color: #0F0A0A;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.4;
-    padding-top: 72px;
+    padding-left: 300px;
 }
 
-.container {
-    background: #fff;
+p {
+    line-height: 1.6;
 }
 
-.wordmark .navbar-brand {
-    color: #C32F27;
-    font-family: 'Roboto Slab';
+h1, h2, h3, h4, h5 {
+    margin: 1rem 0 1.5rem 0;
+    color: #0B4F6C;
+    color: #505050;
+    font-family: 'Slabo';
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.btn-primary {
+    text-transform: uppercase;
+    background: #0B4F6C;
+    border-color: #0B4F6C;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0B4F6C;
+}
+
+.wordmark {
+    margin: 0 0 0 0;
+    line-height: 1;
+    font-size: 2rem;
+}
+
+.wordmark a {
+    color: #fff;
+    font-family: 'Slabo';
     text-transform: uppercase;
 }
 
-.navbar {
-    border-bottom: 1px solid #E5EAFA;
+.wordmark a:hover {
+    text-decoration: none;
 }
 
-.navbar-nav {
-    margin-left: auto;
+.wordmark > a > span {
+    font-size: 3.75rem;
 }
 
 .nav-link {
-    color: #212529;
-    font-family: 'Roboto';
+    color: #fff;
+    font-size: 1.125rem;
     font-weight: 500;
     text-transform: uppercase;
+    padding-left: 0;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
-    color: #212529;
+    color: #fff;
 }
 
-#intro {
-    margin-top: 0;
+.btn {
+    font-size: 1rem;
 }
 
 .block {
     margin: 4rem 0;
+}
+
+.box-white {
+    background: #fff;
+}
+
+.box {
+    border: 1px solid #E5EAFA;
+}
+
+.content {
+    padding: 20px 40px 20px 20px;
+    max-width: 980px;
+}
+
+#footer {
+    max-width: 980px;
+}
+
+.sidebar {
+    color: #fff;
+    background: #C32F27;
+    padding: 1.25rem 0.5rem;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 300px;
+}
+
+.sidebar .nav {
+    margin: 3rem 1.25rem;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.contact-form {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.contact-form h2 {
+    font-weight: 400;
+}
+
+.directions {
+    width: 100%;
+    max-width: 500px;
+}
+
+.directions iframe {
+    height: 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0B4F6C;
+}
+
+.product-pricing {
+    flex: 1;
+    padding: 0 2rem;
+    max-height: 400px;
+}
+
+.product {
+    margin-top: 1.5rem;
+}
+
+.product-images {
+    width: 60%;
+}
+
+.prices {
+    list-style-type: none;
+    padding-left: 0;
+    padding: 0.25rem 0;
+}
+
+.prices li {
+    padding: 0.25rem 0;
+}
+
+.prices span {
+    float: right;
+}
+
+.gallery {
+    position: relative;
+    max-width: 600px;
+}
+
+.table-center td,
+.table-center thead th {
+    text-align: center;
+}
+
+.table-light.table-bordered td,
+.table-light.table-bordered thead th {
+    border-color: #E5EAFA;
+}
+
+.table-bordered td,
+.table-bordered thead th {
+    border-color: #505050;
+}
+
+.table-bordered thead th {
+    background: #505050;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.faq {
+    margin: 2rem 0;
+}
+
+.faq:first-child {
+    margin-top: 0;
+}
+
+.faq-question,
+.faq-answer {
+    line-height: 1.2;
+}
+
+.faq-question {
+    margin: 0.25rem 0;
+}
+
+.faq-question:before {
+    content: 'Q: ';
+    font-family: 'Roboto Slab';
+    font-size: 1.275rem;
+}
+
+.faq-answer {
+    margin: 0.25rem 0;
+}
+
+.faq-answer:before {
+    content: 'A: ';
+    font-family: 'Roboto Slab';
+    font-size: 1.275rem;
+    font-weight: 400;
+}
+
+.slick-prev {
+    left: 15px;
+    z-index: 99;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: rgba(15,10,10,0.75);
+    font-size: 2.5rem;
+}
+
+.slick-next {
+    right: 25px;
+    z-index: 99;
+}
+
+#feeding-chart {
+
+}
+
+.dog-silhouette {
+    position: absolute;
+    bottom: 20px;
+    left: 32.5%;
 }
