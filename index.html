@@ -15,10 +15,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400,500&display=swap" rel="stylesheet"> -->
 </head>
 <body>
-    <div class="container-fluid d-flex">
+    <div>
         <aside class="sidebar">
             <div class="text-center">
                 <!-- <img src="/images/dog-silhouette-white.png" width="60px" height="auto" alt=""> -->
@@ -26,20 +25,29 @@
                 <span><small>Fresh from our supplier to our kitchen</small></span>
             </div>
 
-            <ul class="nav flex-column">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#intro">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#feeding-chart">Feeding Chart</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-expand-lg navbar navbar-expand-lg navbar-dark ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#intro">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feeding-chart">Feeding Chart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
 
             <div class="text-center dog-silhouette">
                 <img src="/images/dog-silhouette-white.png" width="80px" height="auto" alt="">
@@ -48,7 +56,7 @@
         <main>
             <div class="content" id="intro">
                 <div class="block product">
-                    <div class="product-content mb-5">
+                    <div class="mb-5">
                         <h2>Dog Food & Treats</h2>
 
                         <p>We are a small run business, just trying to pass along great products that we have discovered to other people. We started feeding a raw diet to our own dogs because of food allergies in our puppy, it was recommended for us to try a raw diet and we seen instant results. So raw it's been ever since. We started making the raw food ourselves and discovered there was a market out there for raw food and would like to pass our product on to you.</p>
@@ -56,31 +64,33 @@
                         <p>Fresh from our supplier to our kitchen. Quality ground chicken and turkey with organ meat, we do an 80% meat 10% bone and 10% organ meat. Also our gourmet blend recipe in either chicken or turkey includes vegetables, fruit and eggs. Also wide variety of all natural Raw dog treats.</p>
                     </div>
 
-                    <div class="d-flex align-items-center box box-white">
-                        <div class="product-pricing align-content-stretch">
-                            <ul class="prices mb-2">
-                                <li>1 lbs Chicken <span>$2.75</span></li>
-                                <li>2 lbs Chicken <span>$5.00</span></li>
-                                <li>1 lbs Turkey <span>$3.25</span></li>
-                                <li>2 lbs Turkey <span>$6.00</span></li>
-                                <li>1 lbs Gourmet Chicken <span>$3.25</span></li>
-                                <li>2 lbs Gourmet Chicken <span>$6.25</span></li>
-                                <li>5 Chicken Carcasses <span>$7.00</span></li>
-                                <li>15 Chicken Feet <span>$5.00</span></li>
-                                <li>4 Cow Neck Bones <span>$5.00</span></li>
-                                <li>3 Bone Marrow Bones <span>$7.00</span></li>
-                            </ul>
-                        </div>
+                    <div class="product-content">
+                        <div class="d-flex align-items-center box box-white">
+                            <div class="product-pricing align-content-stretch">
+                                <ul class="prices mb-2">
+                                    <li>1 lbs Chicken <span>$2.75</span></li>
+                                    <li>2 lbs Chicken <span>$5.00</span></li>
+                                    <li>1 lbs Turkey <span>$3.25</span></li>
+                                    <li>2 lbs Turkey <span>$6.00</span></li>
+                                    <li>1 lbs Gourmet Chicken <span>$3.25</span></li>
+                                    <li>2 lbs Gourmet Chicken <span>$6.25</span></li>
+                                    <li>5 Chicken Carcasses <span>$7.00</span></li>
+                                    <li>15 Chicken Feet <span>$5.00</span></li>
+                                    <li>4 Cow Neck Bones <span>$5.00</span></li>
+                                    <li>3 Bone Marrow Bones <span>$7.00</span></li>
+                                </ul>
+                            </div>
 
-                        <div class="product-images">
-                            <div class="gallery">
-                                <div><img src="/images/gallery/bone-marrow.png" alt="" width="600" height="400"></div>
-                                <div><img src="/images/gallery/bones.png" alt="" width="600" height="400"></div>
-                                <div><img src="/images/gallery/bones2.png" alt="" width="600" height="400"></div>
-                                <div><img src="/images/gallery/chicken-feet.png" alt="" width="600" height="400"></div>
-                                <div><img src="/images/gallery/cow-neck.png" alt="" width="600" height="400"></div>
-                                <div><img src="/images/gallery/raw-dog-food.png" alt="" width="600" height="400"></div>
-                                <div><img src="/images/gallery/tubs-of-food.png" alt="" width="600" height="400"></div>
+                            <div class="product-images">
+                                <div class="gallery">
+                                    <div><img src="/images/gallery/bone-marrow.png" alt="" width="600" height="400"></div>
+                                    <div><img src="/images/gallery/bones.png" alt="" width="600" height="400"></div>
+                                    <div><img src="/images/gallery/bones2.png" alt="" width="600" height="400"></div>
+                                    <div><img src="/images/gallery/chicken-feet.png" alt="" width="600" height="400"></div>
+                                    <div><img src="/images/gallery/cow-neck.png" alt="" width="600" height="400"></div>
+                                    <div><img src="/images/gallery/raw-dog-food.png" alt="" width="600" height="400"></div>
+                                    <div><img src="/images/gallery/tubs-of-food.png" alt="" width="600" height="400"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,15 +98,15 @@
                 </div>
 
                 <div id="feeding-chart" class="block">
-                    <h2>Recommended serving of Raw Food</h2>
+                    <h2>Recommended Serving <span class="d-none d-md-inline">of Raw Food</span></h2>
 
                     <div class="d-flex">
-                    <table class="table table-bordered table-center table-sm mr-5 mb-2">
+                    <table class="table table-bordered table-center table-sm mr-5">
                         <thead>
                             <tr>
-                                <th>kg</th>
-                                <th>lbs</th>
-                                <th>oz</th>
+                                <th>Weight (kg)</th>
+                                <th>Weight (lbs)</th>
+                                <th>Food (oz)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -155,12 +165,12 @@
                         </tbody>
                     </table>
 
-                    <table class="table table-bordered table-sm table-center mb-2">
+                    <table class="table table-bordered table-sm table-center">
                         <thead>
                             <tr>
-                                <th>kg</th>
-                                <th>lbs</th>
-                                <th>oz</th>
+                                <th>Weight (kg)</th>
+                                <th>Weight (lbs)</th>
+                                <th>Food (oz)</th>
                             </tr>
                         </thead>
                         <tbody>
