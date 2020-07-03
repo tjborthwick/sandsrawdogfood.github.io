@@ -27,6 +27,7 @@ html, body {
 
 body {
     background: #F5EFED;
+    background: #fff;
     color: #0F0A0A;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 400;
@@ -45,7 +46,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .btn-primary {
@@ -101,12 +103,12 @@ h2 {
     margin: 4rem 0;
 }
 
-.box-white {
-    background: #fff;
-}
-
 .box {
     border: 1px solid #E5EAFA;
+}
+
+.form-control {
+    border-color: #E5EAFA;
 }
 
 .content {
