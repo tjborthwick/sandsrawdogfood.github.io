@@ -18,6 +18,8 @@ Smoky Black #0F0A0A
 Cadmium Orange #F28F3B
 Venetian Red #BF211E
 
+Charcoal #353A47
+
 */
 
 html, body {
@@ -29,36 +31,41 @@ body {
     background: #F5EFED;
     background: #fff;
     color: #0F0A0A;
-    font-family: 'Montserrat', Arial, sans-serif;
+    color: #484848;
+    font-family: 'Raleway', Arial, sans-serif;
     font-weight: 400;
     line-height: 1.4;
+    text-align: center;
 }
 
 p {
     line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 h1, h2, h3, h4, h5 {
     margin: 1rem 0 1.5rem 0;
-    color: #0B4F6C;
     color: #505050;
-    font-family: 'Slabo';
+    font-family: 'Montserrat';
+    font-weight: normal;
 }
 
 h2 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.125;
+    text-align: center;
 }
 
 .btn-primary {
     text-transform: uppercase;
-    background: #0B4F6C;
-    border-color: #0B4F6C;
+    background: #353A47;
+    border-color: #353A47;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #0B4F6C;
+    background-color: #353A47;
 }
 
 .wordmark {
@@ -111,13 +118,17 @@ h2 {
     border-color: #E5EAFA;
 }
 
+.form-group {
+    text-align: left;
+}
+
 .content {
-    padding: 1rem;
-    max-width: 980px;
+    padding: 0.75rem;
+    max-width: 1180px;
 }
 
 #footer {
-    max-width: 980px;
+    max-width: 1180px;
 }
 
 .navbar {
@@ -138,10 +149,11 @@ h2 {
 .copyright {
     font-size: 0.875rem;
     text-transform: uppercase;
+    padding: 0 0.5rem;
 }
 
 .contact-form {
-    padding: 1.5rem;
+    padding: 1rem 0.5rem;
     width: 100%;
 }
 
@@ -160,7 +172,7 @@ h2 {
 
 .form-control:focus {
     box-shadow: none;
-    border-color: #0B4F6C;
+    border-color: #353A47;
 }
 
 .product-pricing {
@@ -177,7 +189,11 @@ h2 {
 }
 
 .product {
-    margin-top: 1.5rem;
+    margin-top: 0;
+}
+
+.product-content {
+    margin-top: 2rem;
 }
 
 .product-content > .d-flex {
@@ -186,6 +202,10 @@ h2 {
 
 .product-content .prices {
     margin-top: 1rem;
+}
+
+.footnote {
+    margin-left: 1rem;
 }
 
 .product-images {
@@ -222,20 +242,20 @@ h2 {
 
 .table-bordered td,
 .table-bordered thead th {
-    border-color: #505050;
+    border-color: #353A47;
 }
 
 .table-bordered thead th {
-    background: #505050;
+    background: #353A47;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 .faq {
     margin: 2rem 0;
 }
 
-.faq:first-child {
+h2 +.faq {
     margin-top: 0;
 }
 
@@ -247,7 +267,7 @@ h2 {
 }
 
 .faq-question {
-    margin: 0.25rem 0;
+    margin: 0.5rem 0;
 }
 
 .faq-question:before {
@@ -295,10 +315,11 @@ h2 {
 
 #feeding-chart > .d-flex table {
     margin-bottom: 1.5rem;
+    font-size: 16px;
 }
 
 #feeding-chart > .d-flex table:last-child {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #contact {
@@ -310,19 +331,25 @@ h2 {
     width: 100%;
 }
 
+.mobile-break {
+    display: block;
+}
+
+@media screen and (min-width: 540px) {
+    .mobile-break {
+        display: inline;
+    }
+}
 
 @media screen and (min-width: 767px) {
-
     body {
-        padding-left: 300px;
-    }
-
-    h2 {
-        font-size: 2.5rem;
+        padding-left: 230px;
+        text-align: left;
+        font-size: 20px;
     }
 
     .content {
-        padding: 40px 30px 20px 30px;
+        padding: 40px 20px 20px 20px;
     }
 
     .sidebar {
@@ -335,8 +362,8 @@ h2 {
         width: 230px;
     }
 
-    .sidebar .nav {
-        margin: 3rem 1.25rem;
+    .mobile-break {
+        display: block;
     }
 
     .dog-silhouette {
@@ -365,6 +392,10 @@ h2 {
         margin-bottom: 0.5rem;
     }
 
+    #feeding-chart > .d-flex table:first-child {
+        margin-right: 0.75rem;
+    }
+
     .dog-silhouette {
         display: block;
     }
@@ -373,20 +404,12 @@ h2 {
         display: none;
     }
 
-    body {
-        padding-left: 230px;
-    }
-
-    h2 {
-        font-size: 1.65rem;
-    }
-
     .product {
         margin-top: 0rem;
     }
 
     .product h2 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
         margin-top: 0;
     }
 
@@ -422,9 +445,21 @@ h2 {
     .product-images {
         width: 100%;
     }
+
+    #feeding-chart > .d-flex table:last-child {
+        margin-bottom: 0;
+    }
+
+    #feeding-chart .footnote {
+        margin-top: -8px;
+    }
 }
 
 @media screen and (min-width: 895px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
     .product-images {
         width: 100%;
     }
@@ -445,6 +480,16 @@ h2 {
 
     .directions {
         max-width: 100%;
+    }
+
+    .sidebar .nav {
+        margin-left: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 942px) {
+    .mobile-break {
+        display: inline;
     }
 }
 
@@ -475,5 +520,13 @@ h2 {
 
     .product-content > .d-flex {
         flex-direction: row;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .content {
+        padding: 40px 30px 20px 40px;
     }
 }
