@@ -98,7 +98,7 @@ h2 {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
-    color: #fff;
+    color: #CBF3D2;
 }
 
 .btn {
@@ -107,10 +107,6 @@ h2 {
 
 .block {
     margin: 2.5rem 0;
-}
-
-.box {
-    border: 1px solid #E5EAFA;
 }
 
 .form-control {
@@ -152,17 +148,38 @@ h2 {
 }
 
 .contact-form {
+    background: #353A47;
+    color: #fff;
     padding: 1rem 0.5rem;
     width: 100%;
+
 }
 
 .contact-form h2 {
     font-weight: 400;
 }
 
+.contact-form .btn-primary {
+    background: #fff;
+    color: #353A47;
+    border: none;
+}
+
+.contact-form .btn-primary:focus,
+.contact-form .btn-primary:active,
+.contact-form .btn-primary:hover,
+.contact-form .btn-primary:not(:disabled):not(.disabled):active {
+    border: none;
+    outline: 0;
+    background: #84B082;
+    color: #fff;
+    box-shadow: none;
+}
+
 .directions {
     width: 100%;
     max-width: 500px;
+    border: 1px solid #E5EAFA;
 }
 
 .directions iframe {
@@ -507,6 +524,7 @@ h2 +.faq {
 
     .contact-form {
         padding: 1.5rem;
+        margin-left: 2rem;
     }
 
     .content {
