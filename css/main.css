@@ -34,6 +34,10 @@ body {
     padding-left: 240px;
 }
 
+footer {
+    max-width: 1200px;
+}
+
 h1,h2,h3,h4,h5 {
     color: #353A47;
     font-family: 'Saira Extra Condensed', sans-serif;
@@ -116,7 +120,11 @@ p {
 
 .logo {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: ;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 0.5rem;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
 }
 
 .gallery {
