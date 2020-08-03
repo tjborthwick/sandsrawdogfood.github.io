@@ -12,23 +12,35 @@
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
     <link rel="stylesheet" href="/css/main.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
         <aside class="sidebar">
-            <div class="logo">
+            <div class="logo" class="">
                 <img src="/images/dog.png" alt="Dog" width="160" height="160">
             </div>
 
-            <nav class="navbar navbar-expand-lg navbar navbar-expand-md navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark">
+                <a href="#" class="navbar-brand">
+                    <h1 class="wordmark">S&S Raw Dog Food</h1>
+                </a>
+
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav flex-column" id="mainMenu">
+                    <ul class="navbar-nav flex-column" id="mainMenu">
                         <li class="nav-item active">
                             <a class="nav-link" href="#intro">About</a>
                         </li>
@@ -48,7 +60,7 @@
                 </div>
             </nav>
         </aside>
-        <main>
+        <div id="main">
             <div class="section" id="intro">
                 <div class="section-content">
                     <h1>S&amp;S Raw Dog Food</h1>
@@ -99,7 +111,7 @@
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus risus a dignissim tincidunt. Suspendisse vitae pretium odio, vel viverra sem. Ut congue condimentum suscipit. Duis sagittis enim et sem convallis efficitur.</p>
 
-                    <div class="d-flex charts">
+                    <div class="charts">
                         <div class="block mb-0">
                             <table class="table table-center table-sm">
                                 <thead>
@@ -314,8 +326,6 @@
                                             <label for="phonenumber">Phone Number</label>
                                             <input type="text" class="form-control" name="phone" />
                                         </div>
-
-                                        <input type="submit" value="Send" class="btn btn-primary" />
                                     </div>
 
                                     <div class="col-md-6">
@@ -326,12 +336,14 @@
 
                                     </div>
                                 </div>
+
+                                <input type="submit" value="Send" class="btn btn-primary" />
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
 
     <footer>
@@ -340,11 +352,10 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
 
-
     <!--
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){

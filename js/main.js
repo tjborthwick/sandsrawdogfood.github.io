@@ -2,7 +2,6 @@
     $('.nav-link').click(function(e) {
         $('.nav-item.active').removeClass('active');
         $(e.target).parent().addClass('active');
-        console.log('click');
     });
 
     // Cache selectors
@@ -27,4 +26,7 @@
         menuItems.filter("[href='#"+id+"']").parent().addClass("active");
     });
 
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
 })(jQuery);
