@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5 {
 
 h1, h2 {
     margin-bottom: 1.5rem;
-    font-size: 2.875rem;
+    font-size: 2.125rem;
     font-weight: 700;
 }
 
@@ -116,7 +116,7 @@ p {
 }
 
 .wordmark {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #fff;
     display: block;
     margin-bottom: 0;
@@ -124,7 +124,7 @@ p {
 
 .section {
     max-width: 1200px;
-    min-height: 100vh;
+    min-height: 88vh;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -138,6 +138,14 @@ p {
 @media screen and (min-width: 400px) {
     body {
         font-size: 18px;
+    }
+
+    h1, h2 {
+        font-size: 2.875rem;
+    }
+
+    .wordmark {
+        font-size: 2rem;
     }
 }
 
@@ -181,6 +189,7 @@ p {
 
     .section {
         padding: 3rem;
+        min-height: 100vh;
     }
 }
 
