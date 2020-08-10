@@ -82,6 +82,7 @@ p {
 
 .sidebar .navbar {
     padding: 0;
+    flex: 1;
 }
 
 .sidebar .nav-link {
@@ -105,7 +106,7 @@ p {
     display: none;
     text-align: center;
     background: rgba(255, 255, 255, 0.25);
-    padding: 0.5rem;
+    padding: 0.25rem;
     border-radius: 50%;
     max-width: 100px;
 }
@@ -116,7 +117,7 @@ p {
 }
 
 .wordmark {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: #fff;
     display: block;
     margin-bottom: 0;
@@ -124,7 +125,7 @@ p {
 
 .section {
     max-width: 1200px;
-    min-height: 88vh;
+    min-height: 85vh;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -172,6 +173,7 @@ p {
 
     .sidebar .navbar {
         width: 100%;
+        flex: 0;
     }
 
     .sidebar .navbar-brand {
