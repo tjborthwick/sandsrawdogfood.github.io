@@ -135,6 +135,10 @@ p {
     width: 100%;
 }
 
+.section-media img {
+    max-width: 100%;
+    height: auto;
+}
 
 @media screen and (min-width: 400px) {
     body {
@@ -154,7 +158,7 @@ p {
     body {
         font-size: 20px;
         padding-top: 0;
-        padding-left: 240px;
+        padding-left: 200px;
     }
 
     h1, h2 {
@@ -168,7 +172,7 @@ p {
         position: fixed;
         left: 0;
         height: 100%;
-        width: 240px;
+        width: 200px;
     }
 
     .sidebar .navbar {
@@ -190,8 +194,21 @@ p {
     }
 
     .section {
-        padding: 3rem;
         min-height: 100vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding-left: 240px;
+    }
+
+    .section {
+        padding: 3rem;
+    }
+
+    .sidebar {
+        width: 240px;
     }
 }
 
@@ -228,6 +245,8 @@ p {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    max-width: 400px;
+    margin-right: auto;
 }
 
 .prices li {
@@ -380,9 +399,32 @@ textarea {
     padding-bottom: 0;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
     .block {
         padding: 1.5rem;
+    }
+}
+
+#treats .d-flex,
+#food .d-flex {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.block-product {
+    margin: 0.75rem 0;
+}
+
+@media (min-width: 500px) {
+    .block-product {
+        flex: 0 0 calc(50% - 16px);
+        margin: 0 0.5rem 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .block-product {
+        flex: 0 0 calc(33.3333% - 24px);
     }
 }
 
