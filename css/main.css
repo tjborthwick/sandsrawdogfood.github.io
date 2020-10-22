@@ -53,6 +53,7 @@ h1, h2 {
 
 h3 {
     font-size: 1.375rem;
+    margin: 1.5rem 0 0.5rem;
 }
 
 h4 {
@@ -280,12 +281,8 @@ p {
 }
 
 .footnote {
-    margin: 0 0 0.5rem 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
     line-height: 1;
-}
-
-.footnote:first-child {
-    margin-top: 1rem;
 }
 
 .faq {
